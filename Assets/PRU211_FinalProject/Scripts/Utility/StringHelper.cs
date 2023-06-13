@@ -20,28 +20,12 @@ public static class StringHelper
 
     public const string LAST_TIME_OPEN_GAME = "LAST_TIME_OPEN_GAME";
     public const string FIRST_TIME_OPEN_GAME = "FIRST_TIME_OPEN_GAME";
-}
+    
+    public const string START_GAME_SCENE = "StartGameScene";
+    public const string GAME_PLAY_SCENE = "GamePlay";
 
-public class PathPrefabs
-{
-    // public const string POPUP_REWARD_BASE = "UI/Popups/PopupRewardBase";
-    // public const string CONFIRM_POPUP = "UI/Popups/ConfirmBox";
-    // public const string WAITING_BOX = "UI/Popups/WaitingBox";
-    // public const string WIN_BOX = "UI/Popups/WinBox";
-    // public const string REWARD_IAP_BOX = "UI/RewardIAPBox";
-    // public const string SHOP_BOX = "UI/ShopBox";
-    // public const string RATE_GAME_BOX = "UI/Popups/RateGameBox";
-    // public const string SETTING_BOX = "UI/Popups/SettingBox";
-    // public const string LOSE_BOX = "UI/Popups/LoseBox";
+    public const string LOAD_LEVEL_PATH = "Levels/Level";
 }
-
-public class SceneName
-{
-    // public const string LOADING_SCENE = "LoadingScene";
-    // public const string HOME_SCENE = "HomeScene";
-    // public const string GAME_PLAY = "GamePlay";
-}
-
 public class AudioName
 {
     public const string bgMainHome = "Music_BG_MainHome";
