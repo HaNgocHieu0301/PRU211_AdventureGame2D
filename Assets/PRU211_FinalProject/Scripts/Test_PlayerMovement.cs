@@ -9,9 +9,10 @@ public class Test_PlayerMovement : MonoBehaviour
     public float climbSpeed = 3f;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
-
+    public float jumpForce = 5f;
     private Rigidbody2D rb;
     private bool isClimbing = false;
+    private bool canJump = true; // Biến để kiểm tra xem nhân vật có thể nhảy hay không
 
     private void Start()
     {
@@ -42,6 +43,12 @@ public class Test_PlayerMovement : MonoBehaviour
         }
 
         rb.velocity = new Vector2(movement.x * moveSpeed, rb.velocity.y);
+
+        if (Input.GetButtonDown("Jump") && canJump) // Kiểm tra nếu nhấn phím Jump và có thể nhảy
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            canJump = false; // Đánh dấu là không thể nhảy nữa cho đến khi rơi xuống đất
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -59,6 +66,14 @@ public class Test_PlayerMovement : MonoBehaviour
         {
             isClimbing = false;
             rb.gravityScale = 1f;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground")) // Kiểm tra va chạm với đất
+        {
+            canJump = true; // Cho phép nhân vật nhảy lại
         }
     }
 }

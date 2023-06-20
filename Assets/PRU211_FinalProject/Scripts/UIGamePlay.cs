@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,11 +7,23 @@ using UnityEngine.UI;
 
 public class UIGamePlay : MonoBehaviour
 {
+    public static UIGamePlay Instance;
     public GameObject pausePanel;
+    public GameObject winPanel;
+    public GameObject losePanel;
     public Button pauseButton;
     public Button restartButton;
     public Button homeButton;
     public Button continueButton;
+    public Button nextLevelButton;
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +31,14 @@ public class UIGamePlay : MonoBehaviour
         restartButton.onClick.AddListener(RestartGame);
         homeButton.onClick.AddListener(BackToHome);
         continueButton.onClick.AddListener(Continue);
+        nextLevelButton.onClick.AddListener(NextLevel);
+    }
+
+    private void NextLevel()
+    {
+        int curLevel = PlayerPrefs.GetInt("curLevel", 0);
+        PlayerPrefs.SetInt("curLevel",curLevel+1);
+        SceneManager.LoadScene(StringHelper.GAME_PLAY_SCENE);
     }
 
     private void Continue()
@@ -46,9 +67,14 @@ public class UIGamePlay : MonoBehaviour
         pauseButton.gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Win()
     {
-        
+        winPanel.SetActive(true);
+        pauseButton.gameObject.SetActive(false);
+    }
+    public void Lose()
+    {
+        losePanel.SetActive(true);
+        pauseButton.gameObject.SetActive(false);
     }
 }
