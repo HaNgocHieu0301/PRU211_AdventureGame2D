@@ -12,7 +12,7 @@ public class Test_PlayerMovement : MonoBehaviour
     public float jumpForce = 5f;
     private Rigidbody2D rb;
     private bool isClimbing = false;
-    private bool canJump = true; // Biến để kiểm tra xem nhân vật có thể nhảy hay không
+    public bool canJump = true; // Biến để kiểm tra xem nhân vật có thể nhảy hay không
 
     private void Start()
     {
@@ -44,7 +44,7 @@ public class Test_PlayerMovement : MonoBehaviour
 
         rb.velocity = new Vector2(movement.x * moveSpeed, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump") && canJump) // Kiểm tra nếu nhấn phím Jump và có thể nhảy
+        if (Input.GetKey(KeyCode.Space) && canJump) // Kiểm tra nếu nhấn phím Jump và có thể nhảy
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             canJump = false; // Đánh dấu là không thể nhảy nữa cho đến khi rơi xuống đất
