@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3696324931307728723}
   - component: {fileID: 3696324931307728732}
   - component: {fileID: 3696324931307728722}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GolemEnemy Variant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 10
-  HealthBar: {fileID: 0}
+  HealthBar: {fileID: 4544565269738152784}
 --- !u!1001 &3696324930220618256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -176,8 +176,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3696324931307728734}
     m_Modifications:
+    - target: {fileID: 890149186428099378, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 890149186734535758, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 890149186734535759, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 890149187376998533, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 890149187556577600, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
@@ -272,12 +284,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 890149187556577613, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 890149187556577614, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
       propertyPath: m_ScaleFactor
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 890149187866171402, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
+--- !u!114 &4544565269738152784 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 890149187556577600, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
+  m_PrefabInstance: {fileID: 3696324930220618256}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a46362628b219ef4aa7f846b4b9e0c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &4544565269738152796 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 890149187556577612, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}

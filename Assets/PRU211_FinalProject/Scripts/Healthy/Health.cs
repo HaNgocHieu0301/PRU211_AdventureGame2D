@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
-    public float currentHealth { get; private set; }
+    private float currentHealth;
     private Animator anim;
-    private bool dead;
+    private bool dead = false;
 
     public HealthBar HealthBar;
 
@@ -15,8 +16,7 @@ public class Health : MonoBehaviour
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
-        HealthBar.SetHealth(currentHealth, startingHealth);
-        TakeDamage(1);
+        HealthBar.SetHealth(currentHealth, startingHealth);  
     }
     public void TakeDamage(float _damage)
     {
@@ -40,7 +40,7 @@ public class Health : MonoBehaviour
                 if (GetComponentInParent<EnemyPatrol>() != null)
                     GetComponentInParent<EnemyPatrol>().enabled = false;
                 if(GetComponent<MeleeEnemy>() != null)
-                    GetComponent<MeleeEnemy>().enabled = true;
+                    GetComponent<MeleeEnemy>().enabled = false;
                 dead = true;
             }
         }
@@ -51,5 +51,12 @@ public class Health : MonoBehaviour
     }
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.E)) {
+            TakeDamage(1);
+        }
+    }
+    public void DeactiveEnemy()
+    {
+        gameObject.SetActive(false);
     }
 }

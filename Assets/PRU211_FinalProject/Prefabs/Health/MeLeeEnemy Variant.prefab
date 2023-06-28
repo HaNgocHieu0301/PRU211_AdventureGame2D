@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4973170460153516088, guid: a1bd22b463bea6249a276e95c4498f5e, type: 3}
       propertyPath: m_Name
-      value: MeLeeEnemy
+      value: MeLeeEnemy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4973170460153516090, guid: a1bd22b463bea6249a276e95c4498f5e, type: 3}
       propertyPath: m_RootOrder
@@ -97,8 +97,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5944901866337019434}
     m_Modifications:
+    - target: {fileID: 890149186428099378, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 890149186734535758, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 890149186734535759, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 890149187376998533, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 890149187556577612, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
@@ -188,6 +200,14 @@ PrefabInstance:
     - target: {fileID: 890149187556577613, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 890149187556577613, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 890149187866171402, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd34ba4a0951e55498beaf2cf33ae073, type: 3}
