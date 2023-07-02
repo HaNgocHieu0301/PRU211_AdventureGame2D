@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBar : MonoBehaviour
+public class HealthBarMC : MonoBehaviour
 {
-    [SerializeField] private Health playerHealth;
+    [SerializeField] private HealthMC playerHealth;
     [SerializeField] private Image totalHealthbar;
     [SerializeField] private Image currentHealthbar;
     // Start is called before the first frame update
