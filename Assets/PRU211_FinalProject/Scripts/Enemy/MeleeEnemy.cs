@@ -18,7 +18,7 @@ public class MeleeEnemy : MonoBehaviour
     private LayerMask playerLayer;
     private float cooldownTimer = 0;
     private Animator anim;
-    private Health playerHealth;
+    private HealthEnemy playerHealth;
     private EnemyPatrol enemyPatrol;
     // Start is called before the first frame update
     void Start()
@@ -58,7 +58,7 @@ public class MeleeEnemy : MonoBehaviour
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z),
             0, Vector2.left, 0, playerLayer);
         if(hit.collider != null) 
-            playerHealth = hit.transform.GetComponent<Health>();
+            playerHealth = hit.transform.GetComponent<HealthEnemy>();
         return hit.collider != null;
     }
 

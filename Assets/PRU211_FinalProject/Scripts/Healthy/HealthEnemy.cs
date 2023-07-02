@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class HealthEnemy : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
     private float currentHealth;
     private Animator anim;
     private bool dead = false;
 
-    public HealthBar HealthBar;
+    public HealthBarEnemy HealthBar;
 
     private void Awake()
     {

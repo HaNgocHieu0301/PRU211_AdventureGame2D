@@ -18,7 +18,7 @@ public class RangeEnemy : MonoBehaviour
     private LayerMask playerLayer;
     private float cooldownTimer = 0;
     private Animator anim;
-    private Health playerHealth;
+    private HealthEnemy playerHealth;
     private EnemyPatrol enemyPatrol;
 
     [SerializeField]
