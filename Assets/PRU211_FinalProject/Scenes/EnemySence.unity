@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8055229245412070692, guid: b1773f8875a5c6f4a8efe62cf0609df0, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1773f8875a5c6f4a8efe62cf0609df0, type: 3}
 --- !u!1001 &979195667
