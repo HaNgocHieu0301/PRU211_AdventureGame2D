@@ -5,6 +5,7 @@ using UnityEngine;
 public class FireBall : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private float damage;
     private bool hit;
     private BoxCollider2D boxCollider;
     private Animator anim;
@@ -38,6 +39,8 @@ public class FireBall : MonoBehaviour
         hit = true;
         //boxCollider.enabled = false;
         anim.SetTrigger("explode");
+        if (collision.tag == "Enemy")
+            collision.GetComponent<HealthEnemy>().TakeDamage(damage);
     }
 
     public void SetDirection(float _direction)

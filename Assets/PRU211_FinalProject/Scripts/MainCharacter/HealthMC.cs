@@ -29,6 +29,7 @@ public class HealthMC : MonoBehaviour
     }
     public void TakeDamage(float _damage)
     {
+        Debug.Log(_damage);
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
         if (currentHealth > 0)
         {
@@ -46,7 +47,7 @@ public class HealthMC : MonoBehaviour
                 anim.SetTrigger("die");
                 behavior.enabled = false;
                 GetComponent<MainCharacterAttack>().enabled = false;
-                dead = true;
+                dead = true; 
             }
         }
     }

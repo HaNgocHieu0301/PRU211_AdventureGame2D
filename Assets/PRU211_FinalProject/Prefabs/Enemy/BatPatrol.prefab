@@ -121,6 +121,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7589068947144735022, guid: 7882382f7c147b449904e24e0728acc4, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7589068947144735026, guid: 7882382f7c147b449904e24e0728acc4, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 65536
+      objectReference: {fileID: 0}
     - target: {fileID: 7589068947144735027, guid: 7882382f7c147b449904e24e0728acc4, type: 3}
       propertyPath: m_RootOrder
       value: 2

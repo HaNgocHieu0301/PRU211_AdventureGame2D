@@ -81,7 +81,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3115268564239738767, guid: bae859ec62dc4064ebcbd04b7f1878ca, type: 3}
       propertyPath: m_Name
-      value: EnemyPatrol (3)
+      value: GolemPatrol
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bae859ec62dc4064ebcbd04b7f1878ca, type: 3}
@@ -104,6 +104,14 @@ PrefabInstance:
     - target: {fileID: 3696324931307728728, guid: e2830b6f529f04e42ae6da6d221edd2b, type: 3}
       propertyPath: m_Name
       value: GolemEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696324931307728728, guid: e2830b6f529f04e42ae6da6d221edd2b, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696324931307728732, guid: e2830b6f529f04e42ae6da6d221edd2b, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 65536
       objectReference: {fileID: 0}
     - target: {fileID: 3696324931307728734, guid: e2830b6f529f04e42ae6da6d221edd2b, type: 3}
       propertyPath: m_RootOrder

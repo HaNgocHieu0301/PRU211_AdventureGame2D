@@ -35,9 +35,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5944901866337019425, guid: c1fb193931dd38048b2196417c80a5b5, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 65536
+      objectReference: {fileID: 0}
     - target: {fileID: 5944901866337019432, guid: c1fb193931dd38048b2196417c80a5b5, type: 3}
       propertyPath: m_Name
       value: MeLeeEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5944901866337019432, guid: c1fb193931dd38048b2196417c80a5b5, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5944901866337019434, guid: c1fb193931dd38048b2196417c80a5b5, type: 3}
       propertyPath: m_RootOrder
@@ -192,7 +200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3115268564239738767, guid: bae859ec62dc4064ebcbd04b7f1878ca, type: 3}
       propertyPath: m_Name
-      value: EnemyPatrol
+      value: KnightPatrol
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bae859ec62dc4064ebcbd04b7f1878ca, type: 3}

@@ -85,6 +85,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3365005408532861472, guid: 5115135222e34ba44ad41a0b0d6e9d1f, type: 3}
+      propertyPath: damge
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3365005408532861472, guid: 5115135222e34ba44ad41a0b0d6e9d1f, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 65536
+      objectReference: {fileID: 0}
     - target: {fileID: 3365005408532861473, guid: 5115135222e34ba44ad41a0b0d6e9d1f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -132,6 +140,10 @@ PrefabInstance:
     - target: {fileID: 3365005408532861476, guid: 5115135222e34ba44ad41a0b0d6e9d1f, type: 3}
       propertyPath: m_Name
       value: RatEnemy Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3365005408532861476, guid: 5115135222e34ba44ad41a0b0d6e9d1f, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5115135222e34ba44ad41a0b0d6e9d1f, type: 3}
