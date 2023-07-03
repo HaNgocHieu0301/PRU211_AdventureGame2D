@@ -7,6 +7,8 @@ TagManager:
   - Ladder
   - WinBlock
   - Ground
+  - Floor
+  - FireBall
   layers:
   - Default
   - TransparentFX
@@ -14,6 +16,9 @@ TagManager:
   - 
   - Water
   - UI
+  - Ground
+  - Wall
+  - Player
   - 
   - 
   - 
@@ -24,7 +29,6 @@ TagManager:
   - 
   - 
   - Enemy
-  - Player
   - 
   - 
   - 
@@ -44,9 +48,26 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< HEAD
   - name: Obstacles
     uniqueID: 3222865915
     locked: 0
   - name: Player
     uniqueID: 618214147
+=======
+  - name: Background
+    uniqueID: 1786069377
+    locked: 0
+  - name: Foreground
+    uniqueID: 3409790163
+    locked: 0
+  - name: Player
+    uniqueID: 3593717185
+    locked: 0
+  - name: Ground
+    uniqueID: 2787646307
+    locked: 0
+  - name: FireBall
+    uniqueID: 1387638177
+>>>>>>> origin/maidtt
     locked: 0
