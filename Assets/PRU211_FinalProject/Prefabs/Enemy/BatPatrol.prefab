@@ -37,7 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3115268564239738764, guid: bae859ec62dc4064ebcbd04b7f1878ca, type: 3}
       propertyPath: idleDuration
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3115268564239738765, guid: bae859ec62dc4064ebcbd04b7f1878ca, type: 3}
       propertyPath: m_RootOrder
@@ -85,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3115268564239738767, guid: bae859ec62dc4064ebcbd04b7f1878ca, type: 3}
       propertyPath: m_Name
-      value: EnemyPatrol (1)
+      value: BatPatrol
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bae859ec62dc4064ebcbd04b7f1878ca, type: 3}
