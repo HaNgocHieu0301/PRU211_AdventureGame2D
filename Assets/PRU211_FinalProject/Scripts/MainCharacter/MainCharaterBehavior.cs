@@ -108,8 +108,16 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
 
     public bool canAttack()
     {
-        return (!onWall() && isGrounded());
+        return (!onWall());
     }
 
+    //public void SetAnim()
+    //{
+    //    if (onWall() && !isGrounded())
+    //    {
+    //        anim.SetTrigger("jump");
+    //        anim.SetBool("grounded", !isGrounded());
+    //    }
+    //}
 
 }

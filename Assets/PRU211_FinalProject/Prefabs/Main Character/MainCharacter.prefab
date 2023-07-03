@@ -222,7 +222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc0e13e7064f2c4cb87fd6ead32d4c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCoolDown: 0
+  attackCoolDown: 0.2
+  shootCoolDown: 0
   firePoint: {fileID: 1852708991}
   fireballs:
   - {fileID: 0}
@@ -240,6 +241,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  coolDownTimer: Infinity
 --- !u!114 &4588027100848379786
 MonoBehaviour:
   m_ObjectHideFlags: 0

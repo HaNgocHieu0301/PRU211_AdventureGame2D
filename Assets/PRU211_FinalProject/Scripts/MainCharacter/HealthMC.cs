@@ -35,11 +35,8 @@ public class HealthMC : MonoBehaviour
             anim.SetTrigger("hurt");
             if (behavior.onWall() && !behavior.isGrounded())
             {
-                Debug.Log("here");
                 anim.SetTrigger("jump");
                 anim.SetBool("grounded", !behavior.isGrounded());
-                Debug.Log(anim.GetBool("grounded"));
-
             }
         }
         else

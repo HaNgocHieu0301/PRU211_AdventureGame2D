@@ -6,11 +6,13 @@ public class MainCharacterAttack : MonoBehaviour
 {
     //public bool pressMouse;
     [SerializeField] private float attackCoolDown;
+    [SerializeField] private float shootCoolDown;
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject[] fireballs;
     private Animator anim;
     private MainCharaterBehavior mainCharaterBehavior;
-    private float coolDownTimer = Mathf.Infinity;
+    public float coolDownTimer = Mathf.Infinity;
+    private float shootCoolDownTimer = Mathf.Infinity;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,23 +29,24 @@ public class MainCharacterAttack : MonoBehaviour
         }
         //coolDownTimer += Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.X) && coolDownTimer >= attackCoolDown && mainCharaterBehavior.canAttack())
+        if (Input.GetKeyDown(KeyCode.X) && shootCoolDownTimer >= shootCoolDown && mainCharaterBehavior.canAttack())
         {
             Shoot();
         }
         coolDownTimer += Time.deltaTime;
+        shootCoolDownTimer += Time.deltaTime;
     }
 
     private void Attack()
     {
         anim.SetTrigger("attack");
+        coolDownTimer = 0;
     }
 
     private void Shoot()
     {
         anim.SetTrigger("shoot");
-        coolDownTimer = 0;
-
+        shootCoolDownTimer = 0;
         //int num = FindFireBall();
         fireballs[FindFireBall()].transform.position = firePoint.position;
         fireballs[FindFireBall()].GetComponent<FireBall>().SetDirection(Mathf.Sign(transform.localScale.x));
