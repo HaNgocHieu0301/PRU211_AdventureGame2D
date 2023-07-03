@@ -20,12 +20,6 @@ public class MeleeEnemy : MonoBehaviour
     private Animator anim;
     private Health playerHealth;
     private EnemyPatrol enemyPatrol;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-
-    }
 
     // Update is called once per frame
     void Update()

@@ -153,7 +153,7 @@ MonoBehaviour:
   boxCollider: {fileID: 4973170460153516095}
   playerLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
 --- !u!114 &4973170460153516094
 MonoBehaviour:
   m_ObjectHideFlags: 0

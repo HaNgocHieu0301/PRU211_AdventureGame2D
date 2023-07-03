@@ -14,7 +14,7 @@ public class UIStartGame : MonoBehaviour
     {
         continueGameBtn.onClick.AddListener(ContinueGame);
         newGameBtn.onClick.AddListener(NewGame);
-        settingBtn.onClick.AddListener(Setting);
+        // settingBtn.onClick.AddListener(Setting);
         score.text = PlayerPrefs.GetInt("score").ToString();
     }
 
