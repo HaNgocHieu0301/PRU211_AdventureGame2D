@@ -7,9 +7,12 @@ using UnityEngine;
 public class GamePlayController : MonoBehaviour
 {
     public GameObject levelObject;
-    
-    // Start is called before the first frame update
-    private void Awake()
+
+    private Test_CameraFollow _cameraFollowScript;
+
+    private Spawner _spawnerScript;
+
+    private void Start()
     {
         int curLevel = PlayerPrefs.GetInt("curLevel", 0);
         GameObject loadedGameObject = Resources.Load<GameObject>(StringHelper.LOAD_LEVEL_PATH + curLevel);
@@ -17,7 +20,11 @@ public class GamePlayController : MonoBehaviour
         {
             loadedGameObject = Resources.Load<GameObject>(StringHelper.LOAD_LEVEL_PATH + (curLevel-1));
         }
-        GameObject level = Instantiate(loadedGameObject, levelObject.transform) ;
+        GameObject level = Instantiate(loadedGameObject, levelObject.transform);
+        _spawnerScript = FindObjectOfType<Spawner>();
+        _spawnerScript.Init();
+        _cameraFollowScript = FindObjectOfType<Test_CameraFollow>();
+        _cameraFollowScript.Init();
     }
 
     // Update is called once per frame

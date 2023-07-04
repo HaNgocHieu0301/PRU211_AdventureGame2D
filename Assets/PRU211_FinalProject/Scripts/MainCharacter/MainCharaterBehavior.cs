@@ -66,7 +66,6 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
         else
             wallJumpCoolDown += Time.deltaTime;
     }
-
     private void jump()
     {
         if (isGrounded())
@@ -93,19 +92,16 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
         return raycastHit.collider != null;
     }
-
     public bool onWall()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
         return raycastHit.collider != null;
     }
-
     private void Down()
     {
         bodyMainCharacter.gravityScale = 10;
         bodyMainCharacter.velocity = new Vector2(bodyMainCharacter.velocity.x, -10);
     }
-
     public bool canAttack()
     {
         return (!onWall());
