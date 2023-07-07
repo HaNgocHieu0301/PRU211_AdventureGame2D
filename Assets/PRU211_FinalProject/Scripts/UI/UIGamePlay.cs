@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class UIGamePlay : MonoBehaviour
 {
     public static UIGamePlay Instance;
+    public Text scoreText;
     public GameObject pausePanel;
     public GameObject winPanel;
     public GameObject losePanel;
@@ -16,6 +17,7 @@ public class UIGamePlay : MonoBehaviour
     public Button homeButton;
     public Button continueButton;
     public Button nextLevelButton;
+    public int score;
     private void Awake()
     {
         if (Instance == null)
@@ -32,6 +34,7 @@ public class UIGamePlay : MonoBehaviour
         homeButton.onClick.AddListener(BackToHome);
         continueButton.onClick.AddListener(Continue);
         nextLevelButton.onClick.AddListener(NextLevel);
+        score = 0;
     }
 
     private void NextLevel()

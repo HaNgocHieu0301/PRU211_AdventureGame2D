@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class HealthMC : MonoBehaviour
 {
-    public float startingHealth;
+    //Max Health
+    public float maxHealth;
     public float currentHealth;
     private Animator anim;
-    public MainCharaterBehavior behavior;
+    private MainCharaterBehavior behavior;
+
     private bool dead;
+
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = startingHealth;
+        currentHealth = maxHealth;
         anim = GetComponent<Animator>();
         behavior = GetComponent<MainCharaterBehavior>();
         anim = GetComponent<Animator>();
@@ -27,10 +30,11 @@ public class HealthMC : MonoBehaviour
             TakeDamage(1);
         }
     }
+
     public void TakeDamage(float _damage)
     {
         Debug.Log(_damage);
-        currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+        currentHealth = Mathf.Clamp(currentHealth - _damage, 0, maxHealth);
         if (currentHealth > 0)
         {
             anim.SetTrigger("hurt");
@@ -47,7 +51,8 @@ public class HealthMC : MonoBehaviour
                 anim.SetTrigger("die");
                 behavior.enabled = false;
                 GetComponent<MainCharacterAttack>().enabled = false;
-                dead = true; 
+                dead = true;
+                UIGamePlay.Instance.losePanel.SetActive(true);
             }
         }
     }

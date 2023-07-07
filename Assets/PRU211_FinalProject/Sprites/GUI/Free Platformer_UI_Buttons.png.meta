@@ -1,0 +1,1312 @@
+fileFormatVersion: 2
+guid: 83835a26768f8b646af06d103fbf15ad
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae676286af4b184b86dfd6e81778f83
+      internalID: 2101137580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 96
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c9d4b21f1405245827ba4c1484a1fa
+      internalID: -1384640322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 98
+        width: 340
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 86, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999bae76e80fe7d4d98df25ff593e363
+      internalID: -2094955915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 70
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1132573dfca0daf41b60cff12ae0d0e7
+      internalID: 203403325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_4
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 65
+        width: 346
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 56, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28e772c74aa81141b54277a673c1f6b
+      internalID: -1473198682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_6
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 38
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd0d6e26e0f2db4d8356ffd54946122
+      internalID: -596213557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_7
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 37
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab923499eaabbad4496c5d1f5f939892
+      internalID: -1393108307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_8
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 34
+        width: 96
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7078a172d16d7d4191e0225a1872596
+      internalID: -453940062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_10
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 18
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ac2b27144696747b3696c3a8863ce1
+      internalID: -1750732563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 18
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc72766eb461cd41a5cc8ee1566796c
+      internalID: 1767665687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 18
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8a5053c57b9bb42aab464dc5a8df6a
+      internalID: 933629986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 18
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d38d04de68e5841b525e1e5818376a
+      internalID: 420806747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_14
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 18
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b250ed12b922142af0ccaa1513a0e4
+      internalID: -158685736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_17
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 7
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a011d996e49692e4c839f27ed1464a7f
+      internalID: -1898398579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_18
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 7
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff9e4195799b174e9884cbc24793717
+      internalID: 2004802341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_19
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 7
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bc49a1dd825694fab887d6280db4b0
+      internalID: -803522012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_20
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 7
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ce8b3d52a2da5478ed1d52e7f41240
+      internalID: 1958810334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_21
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 7
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fbb94bc7fb30e48aa3303914632fe1
+      internalID: -1626891557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_22
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 7
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dec137054dfa7348825661d79fba1bf
+      internalID: -1037867190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_23
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 7
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e18ed1c9e0d6e478d54a0b59ea37d7
+      internalID: 806528085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_24
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 7
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db0e99a7d4e16b4490eaeb45130c66e
+      internalID: -339587464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_25
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 7
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9f628ecf79af8498b4e571dd779be1
+      internalID: -21667306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 7
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ab794f66935ce4081360622d0f86cb
+      internalID: 1726664143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_27
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 7
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0b106e7f5c40d4e9050ecbd5c7c842
+      internalID: -1370331469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_28
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 7
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747358462ad9f5945ada67ccc860513f
+      internalID: 1642574028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_29
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 7
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c9cfb612039bd44a147246865fc5b5
+      internalID: 1268069039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_30
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 7
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5decb04f2615a42b8492f1c6aeb89b
+      internalID: 478526166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_31
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 7
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adee57cc18ff0f3439366488d8360c23
+      internalID: 2109589401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_32
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 7
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff291218c0b6e24fbc4b420d2dca106
+      internalID: -1001729672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_33
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 6
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52ff0042a0015f499787f99a442518f
+      internalID: -1604097890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_34
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 7
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d656fc51207514491dc6ef6cac2395
+      internalID: -1560377980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_35
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 7
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0ffa20fc06a7443bd78f7400ef9504
+      internalID: 1956822464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_36
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 7
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7927defb13c64124688364e862a7a011
+      internalID: 1311242978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_37
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 7
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45aa7c1cabb1fec4c8f525b7a01aeb65
+      internalID: -2111993240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_38
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 7
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3da7b9e372a9ef438d26210ba14b1dd
+      internalID: -1415646335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_39
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 6
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6385d0b12dad7144d9dc15dc48cd55fd
+      internalID: 40160617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_40
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 7
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2909fabcbde7cd74da4f0b64775e1581
+      internalID: 1818194407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_41
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6292c5a52b9ff1941979c5799b1468bf
+      internalID: -1587430368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_42
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97401c4feca290459d9c208d8d45e1b
+      internalID: 1920532753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_43
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa7b2bbb69d1ff4aa792427ad3ae5d8
+      internalID: -1602854860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_44
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 2
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0c961f23be988479332ed504ad1a7b
+      internalID: 1197080472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_45
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 146
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e238c1de42217149a5b20a71f720282
+      internalID: 387124238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_5
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 2
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58cd9c044071d3a4b9d7fcda726d4ad6
+      internalID: 467842549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 34
+        width: 96
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14aa11d8c33d69c4082b8dc15774d4e2
+      internalID: -1003813396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_15
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 34
+        width: 96
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59830e8e38c1904cb3439245f052357
+      internalID: -526862303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_16
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 34
+        width: 80
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269bc9e1acd7a3647b2ed419aa94492d
+      internalID: -360829903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_46
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 34
+        width: 64
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4f1070dffce4e4dafc843df4202785
+      internalID: -23271877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_47
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 34
+        width: 80
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2658d56b34d0f94ea29d8f5ab75ca61
+      internalID: 1696249685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_48
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 34
+        width: 64
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda3e411fe0027c4c8b30c6fa71a5556
+      internalID: -219885706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_49
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 66
+        width: 96
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7983baebfd9b0e42a2812221776b6a5
+      internalID: -516696338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_50
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 98
+        width: 96
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7b426615e81694ab8a6f83a8e4f49c
+      internalID: 1953991555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_51
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 98
+        width: 96
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fca3d906d87314098c8d2e493002eb
+      internalID: -1726655591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free Platformer_UI_Buttons_52
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 66
+        width: 96
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9092931bcd617b41b617541afd0c349
+      internalID: 907264696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Free Platformer_UI_Buttons_30: 478526166
+      Free Platformer_UI_Buttons_35: 1956822464
+      Free Platformer_UI_Buttons_4: -1473198682
+      Free Platformer_UI_Buttons_6: -596213557
+      Free Platformer_UI_Buttons_17: -1898398579
+      Free Platformer_UI_Buttons_27: -1370331469
+      Free Platformer_UI_Buttons_50: 1953991555
+      Free Platformer_UI_Buttons_11: 1767665687
+      Free Platformer_UI_Buttons_5: 467842549
+      Free Platformer_UI_Buttons_31: 2109589401
+      Free Platformer_UI_Buttons_38: -1415646335
+      Free Platformer_UI_Buttons_28: 1642574028
+      Free Platformer_UI_Buttons_18: 2004802341
+      Free Platformer_UI_Buttons_29: 1268069039
+      Free Platformer_UI_Buttons_47: 1696249685
+      Free Platformer_UI_Buttons_1: -1384640322
+      Free Platformer_UI_Buttons_46: -23271877
+      Free Platformer_UI_Buttons_42: 1920532753
+      Free Platformer_UI_Buttons_12: 933629986
+      Free Platformer_UI_Buttons_16: -360829903
+      Free Platformer_UI_Buttons_21: -1626891557
+      Free Platformer_UI_Buttons_32: -1001729672
+      Free Platformer_UI_Buttons_51: -1726655591
+      Free Platformer_UI_Buttons_3: 203403325
+      Free Platformer_UI_Buttons_26: 1726664143
+      Free Platformer_UI_Buttons_44: 1197080472
+      Free Platformer_UI_Buttons_7: -1393108307
+      Free Platformer_UI_Buttons_2: -2094955915
+      Free Platformer_UI_Buttons_40: 1818194407
+      Free Platformer_UI_Buttons_8: -453940062
+      Free Platformer_UI_Buttons_52: 907264696
+      Free Platformer_UI_Buttons_49: -516696338
+      Free Platformer_UI_Buttons_0: 2101137580
+      Free Platformer_UI_Buttons_25: -21667306
+      Free Platformer_UI_Buttons_48: -219885706
+      Free Platformer_UI_Buttons_13: 420806747
+      Free Platformer_UI_Buttons_19: -803522012
+      Free Platformer_UI_Buttons_22: -1037867190
+      Free Platformer_UI_Buttons_39: 40160617
+      Free Platformer_UI_Buttons_36: 1311242978
+      Free Platformer_UI_Buttons_20: 1958810334
+      Free Platformer_UI_Buttons_10: -1750732563
+      Free Platformer_UI_Buttons_9: -1003813396
+      Free Platformer_UI_Buttons_45: 387124238
+      Free Platformer_UI_Buttons_33: -1604097890
+      Free Platformer_UI_Buttons_37: -2111993240
+      Free Platformer_UI_Buttons_24: -339587464
+      Free Platformer_UI_Buttons_43: -1602854860
+      Free Platformer_UI_Buttons_34: -1560377980
+      Free Platformer_UI_Buttons_41: -1587430368
+      Free Platformer_UI_Buttons_23: 806528085
+      Free Platformer_UI_Buttons_15: -526862303
+      Free Platformer_UI_Buttons_14: -158685736
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
