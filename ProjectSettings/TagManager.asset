@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ladder
+  - WinBlock
+  - Ground
+  - FireBall
+  - Floor
+  - Enemy
+  - Item
+  - Coin
+  - Trap
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -14,16 +24,16 @@ TagManager:
   - 
   - 
   - 
+  - Obstacles
   - 
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Player
+  - Ground
+  - Wall
   - 
   - 
   - 
@@ -40,4 +50,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Obstacles
+    uniqueID: 3222865915
+    locked: 0
+  - name: Player
+    uniqueID: 618214147
     locked: 0

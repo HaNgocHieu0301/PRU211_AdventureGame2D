@@ -31,7 +31,7 @@ public class GameController : MonoBehaviour
     {
         Application.targetFrameRate = 60;
         //useProfile.IsRemoveAds = true;
-        useProfile.CurrentLevelPlay = UseProfile.CurrentLevel;
+        // useProfile.CurrentLevelPlay = UseProfile.CurrentLevel;
     }
 
     public void LoadScene(string sceneName)
