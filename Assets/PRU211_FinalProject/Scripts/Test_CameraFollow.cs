@@ -10,16 +10,22 @@ public class Test_CameraFollow : MonoBehaviour
 
     private Vector3 initialPosition; // Vị trí ban đầu của camera
 
-    private void Start()
+    public bool Init()
     {
+        GameObject player = FindObjectOfType<MainCharaterBehavior>().gameObject;
+        target = player.transform;
         initialPosition = transform.position;
+        return true;
     }
 
     private void LateUpdate()
     {
-        Vector3 desiredPosition = target.position + offset;
-        desiredPosition.z = initialPosition.z; // Giữ nguyên giá trị trục Z của camera
-        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-        transform.position = smoothedPosition;
+        if (Init())
+        {
+            Vector3 desiredPosition = target.position + offset;
+            desiredPosition.z = initialPosition.z; // Giữ nguyên giá trị trục Z của camera
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+            transform.position = smoothedPosition;   
+        }
     }
 }
