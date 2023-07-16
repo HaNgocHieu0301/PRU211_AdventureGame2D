@@ -205,6 +205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   jumpPower: 10
+  horizontal: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 131072
@@ -212,6 +213,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 262144
   wallJumpCoolDown: 0
+  audio_jump: {fileID: 3882913799601872634, guid: dacbd893567f6c2409624e14c5f6d599, type: 3}
+  audio_run: {fileID: 7858187308134225230, guid: b8a99abc2deadd648a404a9a02e965fb, type: 3}
 --- !u!114 &4588027100848379785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +254,8 @@ MonoBehaviour:
     m_Bits: 32768
   damge: 2
   colliderDistance: 1.2
+  audio_attack: {fileID: 2425879707642668344, guid: 0fe9ed2ac1829144cb68c46549927bf4, type: 3}
+  audio_shoot: {fileID: 2313490268999276351, guid: 409bac47447011f41ab6f6acb5315006, type: 3}
 --- !u!114 &4588027100848379786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +270,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 0
   currentHealth: 0
+  audio_death: {fileID: 5717604155026476103, guid: 520f33f5f38936944a6fd12b9c439b52, type: 3}
+  audio_main: {fileID: 373981957536961153, guid: 7f7a9d918b9bef746a44f63aeb96a09c, type: 3}
+  audio_hurt: {fileID: 7720208207026474781, guid: 88352514ed46f214c8e94a0750750049, type: 3}
 --- !u!114 &6606260368492139463
 MonoBehaviour:
   m_ObjectHideFlags: 0

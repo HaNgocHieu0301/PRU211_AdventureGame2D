@@ -25,6 +25,8 @@ public class MainCharacterAttack : MonoBehaviour
     private int damge;
     [SerializeField]
     private float colliderDistance;
+    public AudioSource audio_attack;
+    public AudioSource audio_shoot;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,12 +53,14 @@ public class MainCharacterAttack : MonoBehaviour
 
     private void Attack()
     {
+        audio_attack.Play();
         anim.SetTrigger("attack");
         coolDownTimer = 0;
     }
 
     private void Shoot()
     {
+        audio_shoot.Play();
         anim.SetTrigger("shoot");
         shootCoolDownTimer = 0;
         //int num = FindFireBall();

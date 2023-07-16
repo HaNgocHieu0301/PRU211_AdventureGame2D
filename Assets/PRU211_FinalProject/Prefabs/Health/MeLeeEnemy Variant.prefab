@@ -12,6 +12,10 @@ PrefabInstance:
       value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4973170460153516081, guid: a1bd22b463bea6249a276e95c4498f5e, type: 3}
+      propertyPath: audio_sword
+      value: 
+      objectReference: {fileID: 7916634182967848167, guid: a8d3643e7a548624faf44f0d4280f966, type: 3}
+    - target: {fileID: 4973170460153516081, guid: a1bd22b463bea6249a276e95c4498f5e, type: 3}
       propertyPath: colliderDistance
       value: 1.2
       objectReference: {fileID: 0}

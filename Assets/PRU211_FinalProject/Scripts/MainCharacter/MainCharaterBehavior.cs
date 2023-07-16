@@ -8,7 +8,7 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
     private float speed;
     [SerializeField]
     private float jumpPower;
-    private float horizontal;
+    public float horizontal;
     private Animator anim;
     private BoxCollider2D boxCollider;
     [SerializeField]
@@ -17,7 +17,8 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
     private LayerMask wallLayer;
     [SerializeField]
     private float wallJumpCoolDown;
-
+    public AudioSource audio_jump;
+    public AudioSource audio_run;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +42,18 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
+        if(horizontal != 0)
+        {
+            if (!audio_run.isPlaying)
+                audio_run.Play();
+        }
+        else
+        {
+            Debug.Log("Stop");
+
+            audio_run.Stop();
+
+        }
         anim.SetBool("run", horizontal != 0);
         anim.SetBool("grounded", isGrounded());
 
@@ -68,6 +81,7 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
     }
     private void jump()
     {
+        audio_jump.Play();
         if (isGrounded())
         {
             anim.SetTrigger("jump");
