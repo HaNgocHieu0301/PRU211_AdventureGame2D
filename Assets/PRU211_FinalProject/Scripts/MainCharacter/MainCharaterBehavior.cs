@@ -128,6 +128,6 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
     //        anim.SetTrigger("jump");
     //        anim.SetBool("grounded", !isGrounded());
     //    }
-    //}
+    //ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
 
 }

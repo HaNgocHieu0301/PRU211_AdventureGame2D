@@ -66,7 +66,7 @@ public class MeleeEnemy : MonoBehaviour
     {
         if(audio_sword != null)
             audio_sword.Play();
-        if (PlayerInSight()) 
+        if (PlayerInSight())
         {
             playerHealth.TakeDamage(damge);
         }
