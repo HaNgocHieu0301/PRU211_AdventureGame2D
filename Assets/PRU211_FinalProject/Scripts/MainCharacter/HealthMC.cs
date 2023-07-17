@@ -11,7 +11,9 @@ public class HealthMC : MonoBehaviour
     private MainCharaterBehavior behavior;
 
     private bool dead;
-
+    public AudioSource audio_death;
+    public AudioSource audio_main;
+    public AudioSource audio_hurt;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,7 @@ public class HealthMC : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, maxHealth);
         if (currentHealth > 0)
         {
+            audio_hurt.Play();
             anim.SetTrigger("hurt");
             if (behavior.onWall() && !behavior.isGrounded())
             {
@@ -48,6 +51,8 @@ public class HealthMC : MonoBehaviour
         {
             if (!dead)
             {
+                audio_main.Stop();
+                audio_death.Play();
                 anim.SetTrigger("die");
                 behavior.enabled = false;
                 GetComponent<MainCharacterAttack>().enabled = false;

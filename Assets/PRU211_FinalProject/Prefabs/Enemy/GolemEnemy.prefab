@@ -153,7 +153,8 @@ MonoBehaviour:
   boxCollider: {fileID: 582661084397017632}
   playerLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
+  audio_sword: {fileID: 7916634182967848167, guid: a8d3643e7a548624faf44f0d4280f966, type: 3}
 --- !u!114 &582661084397017633
 MonoBehaviour:
   m_ObjectHideFlags: 0

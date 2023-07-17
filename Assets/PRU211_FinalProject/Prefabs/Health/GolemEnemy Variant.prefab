@@ -155,6 +155,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
+  audio_sword: {fileID: 7916634182967848167, guid: a8d3643e7a548624faf44f0d4280f966, type: 3}
 --- !u!114 &3696324931307728722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85b8c86969455b345968c93e7f291277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 10
+  startingHealth: 20
   HealthBar: {fileID: 4544565269738152784}
 --- !u!1001 &3696324930220618256
 PrefabInstance:

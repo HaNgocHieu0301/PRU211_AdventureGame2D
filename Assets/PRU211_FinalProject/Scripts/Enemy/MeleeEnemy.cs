@@ -20,7 +20,7 @@ public class MeleeEnemy : MonoBehaviour
     private Animator anim;
     private HealthMC playerHealth;
     private EnemyPatrol enemyPatrol;
-
+    public AudioSource audio_sword;
     // Update is called once per frame
     void Update()
     {
@@ -64,7 +64,9 @@ public class MeleeEnemy : MonoBehaviour
 
     private void DamgagePlayer()
     {
-        if(PlayerInSight()) 
+        if(audio_sword != null)
+            audio_sword.Play();
+        if (PlayerInSight())
         {
             playerHealth.TakeDamage(damge);
         }

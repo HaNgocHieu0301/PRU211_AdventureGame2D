@@ -25,6 +25,7 @@ public class RangeEnemy : MonoBehaviour
     private Transform firepoint;
     [SerializeField]
     private GameObject[] fireballs;
+    public AudioSource audio_fireball;
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -37,6 +38,7 @@ public class RangeEnemy : MonoBehaviour
         {
             if (cooldownTimer >= attackCooldown)
             {
+                audio_fireball.Play();
                 cooldownTimer = 0;
                 anim.SetTrigger("RangedAttack");
             }
