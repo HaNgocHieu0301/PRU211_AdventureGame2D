@@ -33,16 +33,22 @@ public class HealthMC : MonoBehaviour
 
     public void TakeDamage(float _damage)
     {
-        Debug.Log(_damage);
+        Debug.Log("Take dame");
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, maxHealth);
         if (currentHealth > 0)
         {
             anim.SetTrigger("hurt");
-            if (behavior.onWall() && !behavior.isGrounded())
+            // if (behavior.onWall() && !behavior.isGrounded())
+            // {
+            //     anim.SetTrigger("jump");
+            //     anim.SetBool("grounded", !behavior.isGrounded());
+            // }
+            if (!behavior.isGrounded())
             {
                 anim.SetTrigger("jump");
                 anim.SetBool("grounded", !behavior.isGrounded());
             }
+
         }
         else
         {

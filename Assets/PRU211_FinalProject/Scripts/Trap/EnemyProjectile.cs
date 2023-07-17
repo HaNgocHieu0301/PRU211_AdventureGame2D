@@ -25,6 +25,7 @@ public class EnemyProjectile : EnemyDamage
         gameObject.SetActive(true);
         coll.enabled = true;
     }
+
     private void Update()
     {
         if (hit) return;
@@ -49,6 +50,7 @@ public class EnemyProjectile : EnemyDamage
         else
             gameObject.SetActive(false); //When this hits any object deactivate arrow
     }
+
     private void Deactivate()
     {
         gameObject.SetActive(false);

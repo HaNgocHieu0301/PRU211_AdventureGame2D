@@ -17,25 +17,30 @@ public class GearMovement : MonoBehaviour
     }
 
     public bool isRotate = true;
-    
+
     public GearType gearType;
+
     [ShowIf("@gearType == GearType.StraightYoyo")]
     public Transform targetTrans;
+
     [ShowIf("@gearType == GearType.StraightYoyo")]
     public float duration;
-    [ShowIf("@isRotate == true")]
-    public float rotationSpeed = 1f;
+
+    [ShowIf("@isRotate == true")] public float rotationSpeed = 1f;
+
     [HideIf("@gearType == GearType.StraightYoyo")]
     public float moveSpeed;
-    [ShowIf("@isRotate == true")]
-    public int rotationDirection = 1;
-    
-    
+
+    [ShowIf("@isRotate == true")] public int rotationDirection = 1;
+
+
     private float targetAngle = 0f;
     private Rigidbody2D _rigid;
-    public float amplitude = 1f;     // Độ lớn của đung đưa
-    public float frequency = 1f;     // Tần số của đung đưa
-    public float angleOffset = 0f;   // Góc pha ban đầu
+    public float amplitude = 1f; // Độ lớn của đung đưa
+    public float frequency = 1f; // Tần số của đung đưa
+
+    public float angleOffset = 0f; // Góc pha ban đầu
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,13 +48,16 @@ public class GearMovement : MonoBehaviour
         if (gearType == GearType.StraightYoyo)
         {
             YoloMovement();
-        }else if (gearType == GearType.StraightLeft)
+        }
+        else if (gearType == GearType.StraightLeft)
         {
             _rigid.velocity = Vector2.left * moveSpeed;
-        }else if (gearType == GearType.StraightRight)
+        }
+        else if (gearType == GearType.StraightRight)
         {
             _rigid.velocity = Vector2.right * moveSpeed;
-        }else if (gearType == GearType.RotateYoyo)
+        }
+        else if (gearType == GearType.RotateYoyo)
         {
             StartCoroutine(ApplySwingForce());
         }
@@ -63,16 +71,15 @@ public class GearMovement : MonoBehaviour
             transform.Rotate(Vector3.forward * rotationSpeed * rotationDirection * Time.deltaTime);
         }
     }
+
     private void YoloMovement()
     {
         transform.DOMoveX(targetTrans.position.x, duration)
             .SetEase(Ease.Linear)
             .SetLoops(-1, LoopType.Yoyo)
-            .OnStepComplete(() =>
-            {
-                rotationDirection *= -1;
-            });
+            .OnStepComplete(() => { rotationDirection *= -1; });
     }
+
     private IEnumerator ApplySwingForce()
     {
         while (true)
