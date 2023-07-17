@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1072101381
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3aa1cb26afcdc244bb3a95c193575ecb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -97,8 +97,16 @@ PrefabInstance:
       value: Circle Saw
       objectReference: {fileID: 0}
     - target: {fileID: 7918566568224467653, guid: 0bd88f74fdce8c74ca80fe584f39f396, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918566568224467653, guid: 0bd88f74fdce8c74ca80fe584f39f396, type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918566568224467653, guid: 0bd88f74fdce8c74ca80fe584f39f396, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1072101381
       objectReference: {fileID: 0}
     - target: {fileID: 7918566568224467657, guid: 0bd88f74fdce8c74ca80fe584f39f396, type: 3}
       propertyPath: gearType

@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1072101381
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: -925760720, guid: 507d2c36b1a7e7f49b108ef510728880, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -179,6 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trapType: 2
+  damage: 50
   fallObject: {fileID: 0}
   upDownObject: {fileID: 0}
 --- !u!1001 &396415499862230399
@@ -231,6 +232,14 @@ PrefabInstance:
     - target: {fileID: 686829819718289278, guid: 6bbd5fcd877479248a6f80dcb0772607, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021338610925174646, guid: 6bbd5fcd877479248a6f80dcb0772607, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021338610925174646, guid: 6bbd5fcd877479248a6f80dcb0772607, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1072101381
       objectReference: {fileID: 0}
     - target: {fileID: 4283579409354944770, guid: 6bbd5fcd877479248a6f80dcb0772607, type: 3}
       propertyPath: m_Name
