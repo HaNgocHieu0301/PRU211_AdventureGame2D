@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7918566568224467656}
   - component: {fileID: 7918566568224467662}
   - component: {fileID: 7918566568224467657}
+  - component: {fileID: 3549310712810069384}
   m_Layer: 0
   m_Name: Circle Saw
   m_TagString: Untagged
@@ -143,9 +144,22 @@ MonoBehaviour:
   rotationSpeed: 360
   moveSpeed: 1
   rotationDirection: -1
-  swingForce: 5
-  swingAngle: 30
-  hingeJoint: {fileID: 0}
   amplitude: 1
   frequency: 1
   angleOffset: 0
+--- !u!114 &3549310712810069384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7918566568224467652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a853ace671e21246a7cfce5e3ad57f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trapType: 0
+  damage: 50
+  fallObject: {fileID: 0}
+  upDownObject: {fileID: 0}

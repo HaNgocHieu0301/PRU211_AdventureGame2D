@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7106448617040914599}
   - component: {fileID: 8505099294871817336}
   - component: {fileID: 2463842455806138668}
+  - component: {fileID: 1288983897969427743}
   - component: {fileID: 5665832270779281550}
   m_Layer: 0
   m_Name: Square Saw
@@ -134,6 +135,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.44575727, y: 0.45500493}
   m_EdgeRadius: 0
+--- !u!114 &1288983897969427743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3153073061567289230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a853ace671e21246a7cfce5e3ad57f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trapType: 6
+  damage: 50
+  fallObject: {fileID: 0}
+  upDownObject: {fileID: 0}
 --- !u!114 &5665832270779281550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,9 +170,6 @@ MonoBehaviour:
   rotationSpeed: 360
   moveSpeed: 1
   rotationDirection: -1
-  swingForce: 5
-  swingAngle: 30
-  hingeJoint: {fileID: 0}
   amplitude: 1
   frequency: 1
   angleOffset: 0
