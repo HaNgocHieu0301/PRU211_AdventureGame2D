@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  speed: 5
+  speed: 10
   resetTime: 5
 --- !u!1001 &644707893835160300
 PrefabInstance:
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  speed: 5
+  speed: 10
   resetTime: 5
 --- !u!1001 &1844389307036298675
 PrefabInstance:
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  speed: 5
+  speed: 10
   resetTime: 5
 --- !u!1001 &2740440482968703723
 PrefabInstance:
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  speed: 5
+  speed: 10
   resetTime: 5
 --- !u!1001 &3076784046787143442
 PrefabInstance:
@@ -664,7 +664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  speed: 5
+  speed: 10
   resetTime: 5
 --- !u!4 &6459597568553122125 stripped
 Transform:
@@ -768,7 +768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  speed: 5
+  speed: 10
   resetTime: 5
 --- !u!1001 &4303626607342985814
 PrefabInstance:
@@ -777,10 +777,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2578836529667128673}
     m_Modifications:
-    - target: {fileID: 3696324931307728722, guid: e2830b6f529f04e42ae6da6d221edd2b, type: 3}
-      propertyPath: startingHealth
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 3696324931307728728, guid: e2830b6f529f04e42ae6da6d221edd2b, type: 3}
       propertyPath: m_Name
       value: GolemEnemy
@@ -911,6 +907,7 @@ MonoBehaviour:
   - {fileID: 7678462851013325805}
   - {fileID: 6459597568553122124}
   - {fileID: 3819028085943244004}
+  audio_fireball: {fileID: 3674532227995115112, guid: e5ee078ec9cf0344da74a563c64f5092, type: 3}
 --- !u!1001 &5181425203806259898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1003,7 +1000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  speed: 5
+  speed: 10
   resetTime: 5
 --- !u!4 &3819028085943244005 stripped
 Transform:
@@ -1102,7 +1099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  speed: 5
+  speed: 10
   resetTime: 5
 --- !u!4 &2709454402060755005 stripped
 Transform:
@@ -1206,7 +1203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  speed: 5
+  speed: 10
   resetTime: 5
 --- !u!1001 &8993472806400846090
 PrefabInstance:
@@ -1300,7 +1297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  speed: 5
+  speed: 10
   resetTime: 5
 --- !u!4 &1141887718262552405 stripped
 Transform:
