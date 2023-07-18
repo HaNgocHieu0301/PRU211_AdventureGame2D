@@ -37,33 +37,33 @@ public class UIGamePlay : MonoBehaviour
         score = 0;
     }
 
-    private void NextLevel()
+    public void NextLevel()
     {
         int curLevel = PlayerPrefs.GetInt("curLevel", 0);
         PlayerPrefs.SetInt("curLevel",curLevel+1);
         SceneManager.LoadScene(StringHelper.GAME_PLAY_SCENE);
     }
 
-    private void Continue()
+    public void Continue()
     {
         Time.timeScale = 1;
         pausePanel.SetActive(false);
         pauseButton.gameObject.SetActive(true);
     }
 
-    private void BackToHome()
+    public void BackToHome()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(StringHelper.START_GAME_SCENE);
     }
 
-    private void RestartGame()
+    public void RestartGame()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(StringHelper.GAME_PLAY_SCENE);
     }
 
-    private void Pause()
+    public void Pause()
     {
         Time.timeScale = 0;
         pausePanel.SetActive(true);

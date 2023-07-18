@@ -48,7 +48,6 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
         else
         {
             Debug.Log("Stop");
-
             audio_run.Stop();
 
         }
@@ -60,7 +59,7 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
         bodyMainCharacter.velocity = new Vector2(horizontal * speed, bodyMainCharacter.velocity.y);
         if (onWall() && !isGrounded())
         {
-            bodyMainCharacter.gravityScale = 7;
+            bodyMainCharacter.velocity = new Vector2(bodyMainCharacter.velocity.x, -speed);
             //bodyMainCharacter.velocity = Vector2.zero;
             //if (Input.GetKey(KeyCode.DownArrow))
             //{
@@ -69,7 +68,7 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
         }
         else
         {
-            bodyMainCharacter.gravityScale = 2;
+            bodyMainCharacter.gravityScale = 3;
         }
         if (Input.GetKey(KeyCode.Space))
             jump();
@@ -85,19 +84,18 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
             anim.SetTrigger("jump");
             bodyMainCharacter.velocity = new Vector2(bodyMainCharacter.velocity.x, jumpPower);
         }
-        else if (onWall() && !isGrounded())
-        {
-            if (horizontal == 0)
-            {
-                bodyMainCharacter.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 5, 0);
-                transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        //else if (onWall() && !isGrounded())
+        //{
+            //if (horizontal == 0)
+            //{
+            //    bodyMainCharacter.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 5, 0);
+            //    transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            //}
+            //else
+            //   bodyMainCharacter.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 3, 6);
 
-            }
-            else
-                bodyMainCharacter.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 3, 6);
-
-            wallJumpCoolDown = 0;
-        }
+            //wallJumpCoolDown = 0;
+        //}
     }
     public bool isGrounded()
     {
