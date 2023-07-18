@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMPING
 {
     Rigidbody2D bodyMainCharacter;
@@ -26,7 +24,7 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
         speed = 10;
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
-        jumpPower = 20;
+        jumpPower = 10;
     }
 
     // Update is called once per frame
@@ -42,7 +40,7 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        if(horizontal != 0)
+        if (horizontal != 0)
         {
             if (!audio_run.isPlaying)
                 audio_run.Play();
@@ -57,27 +55,27 @@ public class MainCharaterBehavior : MonoBehaviour          //JUMP, RUN, WALLJUMP
         anim.SetBool("run", horizontal != 0);
         anim.SetBool("grounded", isGrounded());
 
-        if (wallJumpCoolDown > 0.2f)
+        //if (wallJumpCoolDown > 0.2f)
+        //{
+        bodyMainCharacter.velocity = new Vector2(horizontal * speed, bodyMainCharacter.velocity.y);
+        if (onWall() && !isGrounded())
         {
-            bodyMainCharacter.velocity = new Vector2(horizontal * speed, bodyMainCharacter.velocity.y);
-            if (onWall() && !isGrounded())
-            {
-                bodyMainCharacter.gravityScale = 0;
-                bodyMainCharacter.velocity = Vector2.zero;
-                if (Input.GetKey(KeyCode.DownArrow))
-                {
-                    Down();
-                }
-            }
-            else
-            {
-                bodyMainCharacter.gravityScale = 7;
-            }
-            if (Input.GetKey(KeyCode.Space))
-                jump();
+            bodyMainCharacter.gravityScale = 7;
+            //bodyMainCharacter.velocity = Vector2.zero;
+            //if (Input.GetKey(KeyCode.DownArrow))
+            //{
+            //    Down();
+            //}
         }
         else
-            wallJumpCoolDown += Time.deltaTime;
+        {
+            bodyMainCharacter.gravityScale = 2;
+        }
+        if (Input.GetKey(KeyCode.Space))
+            jump();
+        //}
+        //else
+        //    wallJumpCoolDown += Time.deltaTime;
     }
     private void jump()
     {
