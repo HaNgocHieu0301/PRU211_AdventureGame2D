@@ -39,8 +39,7 @@ public class UIGamePlay : MonoBehaviour
         scoreText.gameObject.SetActive(true);
         score = 0;
         PlayerPrefs.SetInt("Key", 0);
-        _mainCharater.SetActive(true);
-
+        //_mainCharater.SetActive(true);
     }
 
     public void NextLevel()

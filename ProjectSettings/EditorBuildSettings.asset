@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/PRU211_FinalProject/Scenes/GamePlay.unity
     guid: e0d4b11d76ebff34e81d24fe0a201cdb
+  - enabled: 1
+    path: Assets/PRU211_FinalProject/Scenes/EndGame.unity
+    guid: 3d8780a8ea0e1af4da3842c65dcd84df
   m_configObjects: {}

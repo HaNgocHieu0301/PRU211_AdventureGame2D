@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthEnemy : MonoBehaviour
 {
@@ -35,15 +36,34 @@ public class HealthEnemy : MonoBehaviour
                 anim.SetTrigger("Die");
                 //Player
                 //GetComponent<PlayerMovement>().enabled = false;
-
-                //Enemy
                 if (GetComponentInParent<EnemyPatrol>() != null)
                     GetComponentInParent<EnemyPatrol>().enabled = false;
                 if(GetComponent<MeleeEnemy>() != null)
                     GetComponent<MeleeEnemy>().enabled = false;
                 dead = true;
+                if (gameObject.name == "GolemEnemy")
+                {
+                    //StartCoroutine("WinGame");
+                    UIGamePlay.Instance.Win();
+                    SceneManager.LoadScene("EndGame");
+                }
             }
         }
+    }
+
+    public IEnumerator WinGame()
+    {
+        Debug.LogError("Win Game");
+        yield return new WaitForSeconds(2f);
+        //Enemy
+        if (GetComponentInParent<EnemyPatrol>() != null)
+            GetComponentInParent<EnemyPatrol>().enabled = false;
+        if(GetComponent<MeleeEnemy>() != null)
+            GetComponent<MeleeEnemy>().enabled = false;
+        dead = true;
+        yield return new WaitForSeconds(2f);
+        UIGamePlay.Instance.Win();
+        SceneManager.LoadScene("EndGame");
     }
     public void AddHealth(float _value)
     {
