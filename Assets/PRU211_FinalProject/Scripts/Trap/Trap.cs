@@ -7,53 +7,77 @@ using UnityEngine;
 
 public class Trap : MonoBehaviour
 {
-    public enum TrapType {
-        Bomb, 
-        NormalTrap, 
-        Fire, 
-        ShooterSpear,         
+    public enum TrapType
+    {
+        Bomb,
+        Fire,
+        ShooterSpear,
         FallingBlockWithTrigger,
         MovementUpDownBlockWithTrigger,
-        MovementTrap
+        SawTrap
     }
+
     public TrapType trapType;
     public int damage = 50;
+
     [ShowIf("@trapType == TrapType.FallingBlockWithTrigger")]
     public GameObject fallObject;
 
     [ShowIf("@trapType == TrapType.MovementUpDownBlockWithTrigger")]
     public GameObject upDownObject;
+
+    public bool isPlayerInTrap = false;
+    public bool isCoroutineRunning = false;
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.CompareTag("Player"))
         {
+            isPlayerInTrap = true;
             HealthMC healthScript = other.collider.GetComponent<HealthMC>();
             if (trapType == TrapType.Bomb)
             {
                 // other.collider.gameObject.GetComponent
                 GetComponent<Animator>().SetTrigger("Explosion");
                 healthScript.TakeDamage(damage);
-            }else if (trapType == TrapType.Fire)
-            {
-                
-            }   
-        }
-    }
-    private void OnCollisionStay2D(Collision2D other)
-    {
-        if (other.collider.CompareTag("Player"))
-        {
-            HealthMC healthScript = other.collider.GetComponent<HealthMC>();
-            if (trapType == TrapType.NormalTrap)
+            }
+            else if (trapType == TrapType.Fire)
             {
                 healthScript.TakeDamage(damage);
             }
         }
     }
+
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Player") && !isCoroutineRunning)
+        {
+            HealthMC healthScript = other.collider.GetComponent<HealthMC>();
+            if (trapType == TrapType.SawTrap || trapType == TrapType.ShooterSpear)
+            {
+                StartCoroutine(DamageOverTime(healthScript));
+            }
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Player"))
+        {
+            if (trapType == TrapType.SawTrap)
+            {
+                isPlayerInTrap = false;
+            }
+
+            isCoroutineRunning = false;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            isPlayerInTrap = true;
             if (trapType == TrapType.FallingBlockWithTrigger)
             {
                 fallObject.GetComponent<Rigidbody2D>().gravityScale = 2.5f;
@@ -61,19 +85,19 @@ public class Trap : MonoBehaviour
             else if (trapType == TrapType.MovementUpDownBlockWithTrigger)
             {
                 upDownObject.GetComponent<UpDown>().ContinuousMoving();
-            }   
+            }
         }
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !isCoroutineRunning)
         {
             HealthMC healthScript = other.GetComponent<HealthMC>();
-             if (trapType == TrapType.Fire)
+            if (trapType == TrapType.Fire)
             {
-                healthScript.TakeDamage(damage);
-            }   
+                StartCoroutine(DamageOverTime(healthScript));
+            }
         }
     }
 
@@ -84,12 +108,29 @@ public class Trap : MonoBehaviour
             if (trapType == TrapType.MovementUpDownBlockWithTrigger)
             {
                 upDownObject.GetComponent<UpDown>().PauseMoving();
-            }   
+            }
+            else if (trapType == TrapType.Fire)
+            {
+                isPlayerInTrap = false;
+            }
+            isCoroutineRunning = false;
         }
     }
 
     public void DestroyTrap()
     {
         Destroy(gameObject);
+    }
+
+    public IEnumerator DamageOverTime(HealthMC healthScript)
+    {
+        isCoroutineRunning = true;
+        while (isPlayerInTrap)
+        {
+            healthScript.TakeDamage(damage);
+            yield return new WaitForSeconds(1f);
+        }
+
+        isCoroutineRunning = false;
     }
 }
