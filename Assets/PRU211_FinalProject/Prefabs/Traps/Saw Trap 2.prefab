@@ -92,6 +92,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7007867474376257209}
     m_Modifications:
+    - target: {fileID: 3549310712810069384, guid: 0bd88f74fdce8c74ca80fe584f39f396, type: 3}
+      propertyPath: trapType
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7918566568224467652, guid: 0bd88f74fdce8c74ca80fe584f39f396, type: 3}
       propertyPath: m_Name
       value: Circle Saw

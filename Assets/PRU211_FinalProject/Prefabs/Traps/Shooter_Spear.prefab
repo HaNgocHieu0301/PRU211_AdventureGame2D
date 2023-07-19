@@ -145,4 +145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a853ace671e21246a7cfce5e3ad57f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trapType: 3
+  trapType: 5
+  damage: 20
+  fallObject: {fileID: 0}
+  upDownObject: {fileID: 0}
+  isPlayerInTrap: 0
+  isCoroutineRunning: 0
